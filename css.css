@@ -42,6 +42,6 @@ section{
     flex-direction: column;
     gap: 15px;
 }
-@media (max-width:(1000px)) {
+@media (max-width:1000px) {
     nav{display: none;}
 }
