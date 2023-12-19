@@ -1,6 +1,5 @@
 body{margin: 0;}
 header{
-    color: white;
     width: 100%; 
     box-sizing: border-box;
     background-color: black;
@@ -10,6 +9,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
+    color: white !important;
 }
 h1,h2,h3,h4,h5,h6{font-weight: bold;}
 h1{font-size: 2.5rem;}
