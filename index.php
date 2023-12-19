@@ -1,1 +1,1 @@
-<?php include_once("html.html")?>
+<?php echo'hi';?>
