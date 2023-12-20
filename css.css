@@ -38,7 +38,6 @@ section{
     margin-top: 80px 0;
 }
 #dropdown{
-    position: sticky;
     width: 24px;
     height: 100%;
 }
@@ -64,7 +63,7 @@ section{
 #menu{
     width: fit-content;
     height: 0;
-    bottom: 0;
+    top: 69px;
     position: absolute;
     display:none;
     flex-direction: column;
@@ -86,8 +85,8 @@ section{
 }
 .active-menu{
 
-    display: flex;
-    min-height: fit-content;
+    display: flex !important;
+    min-height: fit-content !important;
 
 }
 

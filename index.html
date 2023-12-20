@@ -15,7 +15,7 @@
             <a href="contacts/contacts.html">Contacts</a>
         </nav>
         <div id="dropdown">
-            <div id="lines">
+            <div onclick="dropdown()" id="lines">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
@@ -28,5 +28,10 @@
         </div>
     </header>
     <section><h1>Hi</h1><p>what?</p></section>
+    <script>
+        function dropdown() {
+            document.getElementById('menu').className = "active-menu";
+        }
+    </script>
 </body>
 </html>
