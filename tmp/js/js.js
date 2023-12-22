@@ -72,7 +72,7 @@ setInterval(() => {
             navA[1].style.color = 'white';
         }else{navA[1].style.color = '';}
     
-        if (section[3].getBoundingClientRect().y < 140 && section[3].getBoundingClientRect().y >= -section[3].offsetHeight + -15    0) {
+        if (section[3].getBoundingClientRect().y < 140 && section[3].getBoundingClientRect().y >= -section[3].offsetHeight + -150) {
             coverNav.style.width = navA[2].offsetWidth + 'px';
             coverNav.style.left = navA[2].offsetLeft + 'px';
             if(section[3].getBoundingClientRect().y < -section[3].offsetHeight + 180){navA[2].style.color = 'black';}else{navA[2].style.color = 'white';}
