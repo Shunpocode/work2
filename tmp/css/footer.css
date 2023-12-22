@@ -125,3 +125,6 @@ footer div:nth-child(2) ul div img{
     margin: 7.5px 0;
 
 }
+@media (max-width:1200px) {
+    footer{margin-top: 0;}
+}

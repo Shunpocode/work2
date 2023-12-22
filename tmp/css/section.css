@@ -52,7 +52,7 @@ input{
 }
 label, input{
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 500;
 }
 section{
@@ -88,17 +88,19 @@ article{
     padding: 30px 70px 60px;
 }
 #hi form{
-    width: 650px;
+    max-width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 #hi form hr{
-    width: 88%;
+    width: 100%;
     margin-left: 0;
 }
 #hi form div{
-    width: 100%;
+    max-width: 100%;
+    width: 390px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -135,7 +137,7 @@ article{
 
 #how{
     background: var(--orange-bc);
-    box-shadow: 0 100px 0 100px var(--orange-bc);
+    box-shadow: 0 200px 0 100px var(--orange-bc);
 }
 #how article{flex-direction: column;}
 .steps{
@@ -182,7 +184,7 @@ article{
 
 #faq{
     background: #EFF3F7;
-    box-shadow: 0 100px 0 100px #EFF3F7;
+    box-shadow: 0 200px 0 100px #EFF3F7;
 
 }
 #faq article{flex-direction: row;}
@@ -230,10 +232,14 @@ article{
 
 
 #testimonials{
+    overflow: hidden;
     background: black;
-    box-shadow: 0 100px 0 100px black;
+    box-shadow: 0 200px 0 100px black;
 }
-
+#testimonials button{
+    padding: 20px 80px;
+    background: var(--orange-bc);
+}
 #testimonials article{
     flex-direction: column;
     gap:30px;
@@ -403,6 +409,7 @@ article{
 }
 
 @media (max-width: 1330px) {
+    #hi button{right: inherit;}
     .step{width: 32%;}
     #testimonials li {position: absolute; height: -webkit-fill-available;}
     #testimonials li:nth-child(2){
@@ -411,15 +418,26 @@ article{
         -moz-transform: translateX(calc(100% + 21px));
         -ms-transform: translateX(calc(100% + 21px));
         -o-transform: translateX(calc(100% + 21px));
-}
+    }
     #testimonials li:nth-child(3){
         transform: translateX(calc(200% + 42px));
         -webkit-transform: translateX(calc(200% + 42px));
         -moz-transform: translateX(calc(200% + 42px));
         -ms-transform: translateX(calc(200% + 42px));
         -o-transform: translateX(calc(200% + 42px));
-}
+    }
 
+}
+@media (max-width:1200px) {
+    section{margin-bottom: 200px;}
+    h3{font-size: 20px;}
+    #faq article{flex-direction: column; position: sticky;}
+    #faq article div{max-width: 100%;}
+    #faq article ul{width: 100%;}
+    #faq ul{ margin-bottom: 145px;}
+    #faq button{ position: absolute; bottom: 0;}
+    #faq ul button{bottom: 0; right: inherit !important; }
+    #faq button{right: 0; }
 }
 
 @media (max-width: 768px) {
